@@ -48,30 +48,30 @@ IOC tracking, OSINT investigation workflow, and TI tool reference.
 
 ## MITRE ATT&CK Quick Reference
 
-- Technique             | ID        | How to Detect                           | Detection Query 
-- ----------------------|-----------|-----------------------------------------|----------------
-- RDP Brute Force       | T1110.001 | EventID 4625, Logon_Type=10, count >20  | See Section 3 
-- PowerShell Abuse      | T1059.001 | EventID 4688, powershell.exe process    | See Section 3 
-- Registry Persistence  | T1547.001 | EventID 4657, Run key modification      | See Section 3 
-- New Local Account     | T1136.001 | EventID 4720 + 4732 correlation         | See Section 3 
-- Log Clearing          | T1070.001 | EventID 1102 or 104                     | See Section 3 
-- SMB Lateral Movement  | T1021.002 | EventID 5140, ADMIN$ or C$ access       | See Section 3 
-- DNS C2                | T1071.004 | DNS queries longer than 50 characters   | See Section 3 
-- Encoded Commands      | T1027     | PowerShell -enc or -EncodedCommand flag | See Section 3 
+| Technique | ID | How to Detect | Detection Query |
+|-----------|-----|--------------|----------------|
+| RDP Brute Force | T1110.001 | EventID 4625, Logon_Type=10, count >20 | See Section 3 |
+| PowerShell Abuse | T1059.001 | EventID 4688, powershell.exe process | See Section 3 |
+| Registry Persistence | T1547.001 | EventID 4657, Run key modification | See Section 3 |
+| New Local Account | T1136.001 | EventID 4720 + 4732 correlation | See Section 3 |
+| Log Clearing | T1070.001 | EventID 1102 or 104 | See Section 3 |
+| SMB Lateral Movement | T1021.002 | EventID 5140, ADMIN$ or C$ access | See Section 3 |
+| DNS C2 | T1071.004 | DNS queries longer than 50 characters | See Section 3 |
+| Encoded Commands | T1027 | PowerShell -enc or -EncodedCommand flag | See Section 3 |
 
 ---
 
 ## Threat Intelligence Tools
 
-- Tool              | URL                      | Use Case 
-- ------------------|--------------------------|--------------------------------------
-- VirusTotal        | virustotal.com           | File, URL, IP, domain reputation 
-- AbuseIPDB         | abuseipdb.com            | IP abuse confidence score 
-- URLScan.io        | urlscan.io               | Safe URL scanning with screenshot 
-- Shodan            | shodan.io                | Internet-facing asset reconnaissance 
-- MXToolbox         | mxtoolbox.com            | Email header and DNS analysis 
-- Any.run           | any.run                  | Interactive malware sandbox 
-- Hybrid Analysis   | hybrid-analysis.com      | Free automated sandbox 
-- MalwareBazaar     | bazaar.abuse.ch          | Malware samples database 
-- GreyNoise         | greynoise.io             | IP noise vs targeted classification 
-- CyberChef         | gchq.github.io/CyberChef | Decode, encode, transform data 
+| Tool | URL | Use Case |
+|------|-----|----------|
+| VirusTotal | virustotal.com | File, URL, IP, domain reputation |
+| AbuseIPDB | abuseipdb.com | IP abuse confidence score |
+| URLScan.io | urlscan.io | Safe URL scanning with screenshot |
+| Shodan | shodan.io | Internet-facing asset reconnaissance |
+| MXToolbox | mxtoolbox.com | Email header and DNS analysis |
+| Any.run | any.run | Interactive malware sandbox |
+| Hybrid Analysis | hybrid-analysis.com | Free automated sandbox |
+| MalwareBazaar | bazaar.abuse.ch | Malware samples database |
+| GreyNoise | greynoise.io | IP noise vs targeted classification |
+| CyberChef | gchq.github.io/CyberChef | Decode, encode, transform data |
