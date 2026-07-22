@@ -17,7 +17,7 @@ followed by suspicious process execution and backdoor account creation.
 ### Timeline
 
 - Time (UTC) | Event                                           | Event ID
--------------|-------------------------------------------------|----------
+- -----------|-------------------------------------------------|----------
 - 03:14:22   | First failed RDP login attempt                  | 4625 
 - 03:14:22   | 03:17:01 | 847 failed attempts in 3 minutes     | 4625 
 - 03:17:03   | Successful RDP login (Logon Type 10)            | 4624 
@@ -29,7 +29,7 @@ followed by suspicious process execution and backdoor account creation.
 ### Indicators of Compromise (IOC)
 
 - Type      | Value                       | Status 
-------------|-----------------------------|--------------------------------
+- ----------|-----------------------------|--------------------------------
 - IP        | 185.220.101.5               | Malicious — AbuseIPDB 98% 
 - Account   | svc_update                  | Backdoor account 
 - Service   | WindowsUpdateSvc            | Malicious service 
@@ -38,7 +38,7 @@ followed by suspicious process execution and backdoor account creation.
 ### MITRE ATT&CK Mapping
 
 - Tactic          | Technique                                        | ID 
-------------------|--------------------------------------------------|----------
+- ----------------|--------------------------------------------------|----------
 - Initial Access  | Brute Force: Password Guessing                   | T1110.001 
 - Persistence     | Create Account: Local Account                    | T1136.001 
 - Persistence     | Create or Modify System Process: Windows Service | T1543.003 
@@ -74,7 +74,7 @@ payload, established persistence via Registry Run Key, and initiated C2 communic
 ### Timeline
 
 - Time (UTC) | Event 
--------------|-----------------------------------------------------
+- -----------|-----------------------------------------------------
 - 08:23      | Phishing email received by HR user 
 - 08:31      | File opened — winword.exe executed 
 - 08:31      | winword.exe → powershell.exe spawned (EventID 4688) 
@@ -85,7 +85,7 @@ payload, established persistence via Registry Run Key, and initiated C2 communic
 ### Indicators of Compromise (IOC)
 
 - Type        | Value                            | Status 
---------------|----------------------------------|--------------------
+- ------------|----------------------------------|--------------------
 - Domain      | company-payroll.com              | Phishing domain 
 - IP          | 185.220.101.5                    | C2 Server 
 - Hash (MD5)  | 44d88612fea8a8f36de82e1278abb02f | Trojan 
@@ -95,7 +95,7 @@ payload, established persistence via Registry Run Key, and initiated C2 communic
 ### MITRE ATT&CK Mapping
 
 - Tactic            | Technique | ID |
---------------------|-----------------------------------------------|----------
+- ------------------|-----------------------------------------------|----------
 - Initial Access    | Phishing: Spearphishing Attachment            | T1566.001 
 - Execution         | Command and Scripting Interpreter: PowerShell | T1059.001 
 - Execution         | User Execution: Malicious File                | T1204.002 
