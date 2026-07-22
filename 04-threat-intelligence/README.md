@@ -6,15 +6,15 @@ IOC tracking, OSINT investigation workflow, and TI tool reference.
 
 ## 📋 IOC Master List
 
-- Type       | Value                             | Threat             | Source          | Date Added 
-- -----------|-----------------------------------|--------------------|-----------------|------------
-- IP         | 185.220.101.5                     | TOR Exit Node / C2 | AbuseIPDB       | 2025-01-06 
-- IP         | 91.108.4.22                       | RDP Scanner        | AbuseIPDB       | 2025-01-06 
-- Domain     | evil-update.com                   | C2 Server          | VirusTotal      | 2025-01-07
-- Domain     | company-payroll.com               | Phishing Domain    | URLScan.io      | 2025-01-07
-- Hash (MD5) | 44d88612fea8a8f36de82e1278abb02f  | Trojan Dropper     | VirusTotal      | 2025-01-07
-- URL        | hxxp://185.220.101.5/stage2.exe   | Malware Payload    | Hybrid Analysis | 2025-01-07
-- Email      | hr@company-payroll.com            | Phishing Sender    | Manual Analysis | 2025-01-07
+| Type | Value | Threat | Source | Date Added |
+|------|-------|--------|--------|------------|
+| IP | 185.220.101.5 | TOR Exit Node / C2 | AbuseIPDB | 2025-01-06 |
+| IP | 91.108.4.22 | RDP Scanner | AbuseIPDB | 2025-01-06 |
+| Domain | evil-update.com | C2 Server | VirusTotal | 2025-01-07 |
+| Domain | company-payroll.com | Phishing Domain | URLScan.io | 2025-01-07 |
+| Hash (MD5) | 44d88612fea8a8f36de82e1278abb02f | Trojan Dropper | VirusTotal | 2025-01-07 |
+| URL | `hxxp://185.220.101.5/stage2.exe` | Malware Payload | Hybrid Analysis | 2025-01-07 |
+| Email | hr@company-payroll.com | Phishing Sender | Manual Analysis | 2025-01-07 |
 
 > ⚠️ Note: Malicious URLs are defanged using `hxxp` to prevent accidental clicks.
 
