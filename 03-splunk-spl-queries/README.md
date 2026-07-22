@@ -10,7 +10,7 @@ Each query includes: use case, explanation, and MITRE ATT&CK mapping.
 **Use Case:** Detect mass failed RDP login attempts from a single IP  
 **MITRE:** T1110.001  
 
-```
+```splunk
 index=windows EventCode=4625 Logon_Type=10
 | bucket _time span=5m
 | stats count as attempts by _time, Source_Network_Address
@@ -160,7 +160,7 @@ Attackers hide data inside DNS queries — they get very long (50+ chars).
 
 ---
 
-SOC Dashboard Overview Query
+## SOC Dashboard Overview Query
 Use Case: Single query to power a full SOC monitoring dashboard
 
 ```
